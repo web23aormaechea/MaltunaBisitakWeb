@@ -188,7 +188,7 @@ final class BisitaController extends AbstractController
             $email = (new TemplatedEmail())
                 ->from($from)
                 ->to($bisitaria->getEmail())  // Obtener el correo del Bisitaria
-                ->subject('Bisita eskaera - Ez Da Onartua')
+                ->subject('Bisita eskaera - Onartua')
                 ->htmlTemplate('mail/onartuMail.html.twig' )
                 ->context([
                     'izena' => $bisitaria->getIzena(),  // Nombre del Bisitaria
@@ -229,7 +229,7 @@ final class BisitaController extends AbstractController
             $email = (new TemplatedEmail())
                 ->from($from)
                 ->to($bisitaria->getEmail())  // Obtener el correo del Bisitaria
-                ->subject('Bisita eskaera - Ez Da Onartua')
+                ->subject('Bisita eskaera - Ez Onartua')
                 ->htmlTemplate('mail/ukatuMail.html.twig' )
                 ->context([
                     'izena' => $bisitaria->getIzena(),  // Nombre del Bisitaria
